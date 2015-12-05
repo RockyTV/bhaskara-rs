@@ -8,3 +8,5 @@ git clone https://github.com/RockyTV/bhaskara-rs
 cd bhaskara-rs
 cargo build
 ```
+
+[rust]: https://rust-lang.org/
