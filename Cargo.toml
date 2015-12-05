@@ -1,0 +1,4 @@
+[package]
+name = "bhaskara"
+version = "0.1.0"
+authors = ["Alexandre Oliveira <rockytvbr@gmail.com>"]
