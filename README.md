@@ -26,4 +26,4 @@ Roots for 1x^2+10x+25 are:
 ```
 
 [rust]: https://rust-lang.org/
-    [formula]: https://en.wikipedia.org/wiki/Quadratic_formula
+[formula]: https://en.wikipedia.org/wiki/Quadratic_formula
