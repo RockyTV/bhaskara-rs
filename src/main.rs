@@ -13,6 +13,11 @@ fn main() {
         Err(_) => panic!("Invalid value for A"),
     };
 
+    // If A is zero, then later we would have a division by zero.
+    if a == 0 {
+        panic!("A must be different than 0");
+    }
+
     input = String::new();
     println!("Input B: ");
     io::stdin().read_line(&mut input)
@@ -48,17 +53,17 @@ fn main() {
     equation = equation.replace("{1}", &b_str);
 
     if c.is_positive() {
-        c_str.insert(0, '-');
+        c_str.insert(0, '+');
     }
     equation = equation.replace("{2}", &c_str);
 
     if delta < 0 {
-        println!("the equation {} has no roots", equation);
+        println!("The quadratic equation {} has no roots", equation);
     } else {
         x1 = ((-1*b) + (delta as f64).sqrt() as i32) / 2*a;
         x2 = ((-1*b) - (delta as f64).sqrt() as i32) / 2*a;
         println!("roots for {} are:", equation);
-        println!("{},{}", x1, x2);
+        println!("{}, {}", x1, x2);
     }
 }
 
