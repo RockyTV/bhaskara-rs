@@ -13,14 +13,17 @@ cargo build
 Input:
 ```bash
 Input A:
-x^2
+1
 Input B:
-+10x
+10
 Input C:
-+25
+25
 ```
 Output:
-`x is (-5, -5)`
+```
+Roots for 1x^2+10x+25 are:
+5, -5
+```
 
 [rust]: https://rust-lang.org/
-[formula]: https://en.wikipedia.org/wiki/Quadratic_formula
+    [formula]: https://en.wikipedia.org/wiki/Quadratic_formula
